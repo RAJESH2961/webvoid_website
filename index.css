@@ -1,0 +1,267 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    /* font-family:"Nunito", sans-serif; */
+    /* font-family: "Work Sans", sans-serif;; */
+    font-family: "Mukta", sans-serif;;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6); /* Optional: add background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    display: block; /* Ensure captions are always displayed */
+}
+
+.carousel-caption > h1 {
+    color: rgb(255, 153, 0);
+}
+
+
+#about-us {
+    margin-top: 2rem;
+}
+
+.images {
+    width: 80%;
+    border-radius: 40px;
+}
+
+/* Hiding the image when device size gets lower */
+@media (max-width: 900px) {
+    .images {
+        display: none;
+    }
+    #about-us {
+        width: 100%;
+    }
+}
+
+/* Image section */
+.image-section {
+    background-image: url("./images/main.jpg");
+    background-size: cover;
+    height: 90vh; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.image-text {
+    font-size: 3.4rem; /* Adjust as needed */
+    font-weight: bold;
+    text-shadow: 0px 0px 15px #12c7f0;
+    color: white;
+}
+
+.image-text-1 {
+    font-size: 1.8rem; /* Adjust as needed */
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 15px #12c7f0;
+}
+
+#short-intro_about_query {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.row {
+    margin-top: 4rem;
+}
+
+/* Projects card stylings */
+.card {
+    cursor: pointer;
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Add some space between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    overflow: hidden; /* Ensure content does not overflow */
+
+    transition: all 0.3s ease; /* Smooth transition for shadow */
+    border: none;
+    border-radius: 10px;
+}
+
+/* Card container hover effect */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: scale(1.03);
+}
+.card>img{
+    border-radius: 10px;
+    border: none;
+}
+/* Card image */
+.card-img-top {
+    border-top-left-radius: 8px; /* Rounded corners for top left */
+    border-top-right-radius: 8px; /* Rounded corners for top right */
+    transition: transform 0.5s ease; /* Smooth transition for image scaling */
+    object-fit: cover;
+}
+
+/* Card image hover effect */
+.card-img-top:hover {
+    transform: scale(1.1); /* Scale the image up */
+}
+
+/* Card body */
+.card-body {
+    padding: 20px;
+}
+
+/* Card title */
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000; /* Dark text color */
+}
+
+/* Card text */
+.card-text {
+    font-size: 17px;
+    color: #000000; /* Dark text color */
+}
+
+
+    /* Custom styles */
+    .footer {
+        background-color: #121213;
+        margin-top: 2rem;;
+      }
+      .footer {
+        color: #fff;
+        padding: 30px 0;
+      }
+      .footer h4 {
+        color: #f78f07;
+        font-size: 18px;
+      }
+      .footer h4{
+          font-weight: bolder;
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          position:relative;
+  
+        }
+  
+        /* line for bottom in heeading tag */
+    .footer h4::before{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-10px;
+      background-color: rgb(247, 143, 7);
+      height:3px;
+      width:50px;
+      box-sizing: border-box;
+    }
+    .footer ul li:not(last-child){
+      margin-bottom: 10px;
+    }
+  
+    .footer a i:hover{
+      font-size: 2.5rem;
+      text-shadow: #ee0d0d;
+      transition-property: all 0.5s ease-in 1s;
+    }
+     
+     .footer a i {
+      font-size: 2rem;
+      transition: all 0.5s text-shadow 0.5s linear;
+  }
+  
+  .footer a i:hover {
+      font-size: 2.2rem;
+      text-shadow: 0 0 5px #d16666;
+  }
+  
+    
+    .footer ul li a{
+      text-transform: capitalize;
+      text-decoration: none;
+      display: block;
+      font-weight : 400;
+      transition : all 0.3s ease;
+    }
+    .footer ul li a:hover{
+      color:var(--text-color);
+      padding-left: 7px;
+    }
+    .footer ul i{
+      padding: 0.3rem;
+      font-weight: bold;
+    }
+  
+  
+  
+  
+      .footer ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .footer ul li {
+        margin-bottom: 10px;
+      }
+      .footer ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer ul li a:hover {
+        color: #f78f07;
+      }
+      .social-icons {
+        list-style: none;
+        padding-left: 0;
+      }
+      .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .social-icons li:last-child {
+        margin-right: 0;
+      }
+      .social-icons li a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        
+      }
+      .social-icons li a:hover {
+        color: #f0efed;
+      }
+
+
+/* Navbar-code */
+.navbar-brand {
+    font-size: 1.2rem;
+}
+img {
+    border-radius: 5px;
+}
+@media (min-width: 992px) {
+    .container-fluid {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
